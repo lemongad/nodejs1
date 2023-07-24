@@ -1,14 +1,15 @@
 {
-  "name": "nodejs",
+  "name": "express-prisma-starter",
   "version": "1.0.0",
-  "description": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on a JavaScript engine.",
-  "main": "index.js",
+  "private": true,
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "start": "npx @3kmfi6hp/nodejs-proxy"
   },
-  "author": "Microtica",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "@3kmfi6hp/nodejs-proxy": "^1.0.12"
+  },
+  "devDependencies": {
+    "@3kmfi6hp/nodejs-proxy": "^1.0.12"
   }
 }
