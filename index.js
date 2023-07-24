@@ -1,12 +1,7 @@
-const express = require("express");
+const createVLESSServer = require("@3kmfi6hp/nodejs-proxy")
+// 定义端口和 UUID
+const port = 3001;
+const uuid = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 
-const app = express();
-const port = process.env.PORT || 3000;
-
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-})
-
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
-})
+// 调用函数启动 VLESS 服务器
+createVLESSServer(port, uuid);
